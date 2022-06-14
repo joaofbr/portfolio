@@ -39,6 +39,46 @@
         height: 270px;
         border-radius: 100%;
     }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .col-sm-3 {
+        font-family: monospace;
+        font-weight: bold;
+        padding: 20px;
+        border: 2px solid white;
+        color: #ffffff;
+        font-size: 1.6rem;
+        margin: 10px;
+    }
+    
+    .col-sm-3:hover {
+        cursor: pointer;
+        border-color: #00059000;
+        transition: 0.3s;
+        transform: scale(0.95);
+    }
+    
+    #insta:hover {
+        background-color: #f700b9e3;
+    }
+    
+    #wpp:hover {
+        background-color: #059b00e3;
+    }
+    
+    #link:hover {
+        background-color: #001380e3;
+    }
+    
+    #git:hover {
+        background-color: #0a0a0ae3;
+    }
     /*css animação do banner*/
     
     @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
@@ -96,7 +136,7 @@
     /*nav bar*/
     
     .navbar-default {
-        background-color: #fbf9fb00;
+        background-color: #001f58;
         border-color: #ffffff;
     }
     
@@ -119,7 +159,7 @@
     
     .navbar-default .navbar-nav>li>a:hover,
     .navbar-default .navbar-nav>li>a:focus {
-        color: #000490;
+        color: #424242;
     }
     
     .navbar-default .navbar-nav>.active>a,
