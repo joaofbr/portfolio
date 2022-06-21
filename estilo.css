@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(23, 0, 66);
+    background-color: transparent;
     width: 100%;
     height: 100%;
 }
@@ -154,12 +154,13 @@ h1:after {
     width: 100%;
 }
 
-#cont1 {
+#cont1,
+#cont2 {
     background-color: #0e0e0e;
     color: white;
     padding: 50px;
     font-family: Comfortaa;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 #h2Sobre {
@@ -174,18 +175,58 @@ h1:after {
 }
 
 #icons {
-    margin: 20px;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 20px;
 }
 
-#textFerramentas {
-    border-bottom: 1px solid;
-    border-image: linear-gradient(45deg, rgb(11, 0, 165), rgb(0, 204, 255)) 1;
-    padding: 3px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 30px;
+#textFrame {
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    background-image: linear-gradient(#001fff, #00e1ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.row-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.barProg {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barraP {
+    font-family: Comfortaa;
+    width: 70%;
+    background-color: #1d1d1d;
+}
+
+.ls-theme-gray div[data-ls-module="progressBar"] span,
+html div[data-ls-module="progressBar"] span {
+    background: linear-gradient(to right, #000490, rgb(2, 162, 255));
+    font-size: 2rem;
+}
+
+#textSkill {
+    background-image: linear-gradient(#0016bd, #00e1ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Comfortaa;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
 }
 
 
