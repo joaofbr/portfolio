@@ -1,319 +1,361 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-}
-
-
-/*banner*/
-
-video {
-    min-width: 100%;
-    min-height: 100%;
-}
-
-#bannerVid video {
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-}
-
-#containerBanner {
-    padding: 50px;
-    width: 100%;
-}
-
-#foto {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-}
-
-img#perfil {
-    width: 100%;
-    height: 270px;
-    border-radius: 100%;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.col-sm-3 {
-    font-family: monospace;
-    font-weight: bold;
-    padding: 20px;
-    border: 2px solid white;
-    color: #ffffff;
-    font-size: 1.7rem;
-    margin: 10px;
-    width: 12%;
-}
-
-.col-sm-3:hover {
-    cursor: pointer;
-    border-color: #00059000;
-    transition: 0.3s;
-    transform: scale(0.95);
-}
-
-#insta:hover {
-    background-color: #f700b9e3;
-}
-
-#wpp:hover {
-    background-color: #059b00e3;
-}
-
-#link:hover {
-    background-color: #001380e3;
-}
-
-#git:hover {
-    background-color: #0a0a0ae3;
-}
-
-
-/*css animação do banner*/
-
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
-* {
-    margin: 0;
-}
-
-.typewriter {
-    font-family: 'Anonymous Pro', monospace;
-    width: 50%;
-}
-
-h1,
-h3 {
-    font-family: monospace;
-    overflow: hidden;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    font-weight: normal;
-    color: white;
-}
-
-h1 {
-    border-bottom: #ffffff solid 1px;
-    padding: 5px;
-}
-
-h1:after {
-    content: '';
-    display: inline-block;
-    background-color: white;
-    margin-left: 2px;
-    height: 25px;
-    width: 4px;
-    animation: cursor 0.4s infinite;
-}
-
-
-/* The typewriter cursor effect */
-
-@keyframes cursor {
-    0% {
-        opacity: 1;
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+    * {
+        margin: 0px;
+        padding: 0px;
     }
-    49% {
-        opacity: 1;
+    
+    body {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
     }
-    50% {
-        opacity: 0;
+    /*banner*/
+    
+    video {
+        min-width: 100%;
+        min-height: 100%;
     }
-    100% {
-        opacity: 0;
+    
+    #bannerVid video {
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
     }
-}
-
-
-/*conteudo*/
-
-.col-sm-8 {
-    padding: 15px;
-}
-
-#containerConteudo1 {
-    width: 100%;
-}
-
-#cont1,
-#cont2 {
-    background-color: #0e0e0e;
-    color: white;
-    padding: 50px;
-    font-family: Comfortaa;
-    font-size: 2rem;
-}
-
-#h2Sobre {
-    border-bottom: 1px solid;
-    border-image: linear-gradient(45deg, rgb(11, 0, 165), rgb(0, 204, 255)) 1;
-    padding: 3px;
-    width: 70%;
-}
-
-#colSobre {
-    margin: 15px;
-}
-
-#icons {
-    margin-bottom: 10px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-}
-
-#textFrame {
-    text-transform: uppercase;
-    font-size: 3.6rem;
-    background-image: linear-gradient(#001fff, #00e1ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-
-.row-skills {
-    display: flex;
-    flex-direction: column;
-}
-
-.barProg {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.barraP {
-    font-family: Comfortaa;
-    width: 70%;
-    background-color: #1d1d1d;
-}
-
-.ls-theme-gray div[data-ls-module="progressBar"] span,
-html div[data-ls-module="progressBar"] span {
-    background: linear-gradient(to right, #000490, rgb(2, 162, 255));
-    font-size: 2rem;
-}
-
-#textSkill {
-    background-image: linear-gradient(#0016bd, #00e1ff);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-family: Comfortaa;
-    text-transform: uppercase;
-    font-size: 2.3rem;
-    margin-bottom: 10px;
-}
-
-
-/*nav bar*/
-
-.navbar-default {
-    background-color: #090a2c;
-    border-color: #ffffff;
-    border: none;
-    font-family: Comfortaa;
-    padding: 5px;
-}
-
-.navbar-default .navbar-brand {
-    color: #fcfeff;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #000490;
-}
-
-.navbar-default .navbar-text {
-    color: #fcfeff;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fcfeff;
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
-    color: #424242;
-}
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #000490;
-    background-color: #0081fb;
-}
-
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:hover,
-.navbar-default .navbar-nav>.open>a:focus {
-    color: #000490;
-    background-color: #0081fb;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: #0082fb00;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #0081fb;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fcfeff;
-}
-
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-    border-color: #fcfeff;
-}
-
-.navbar-default .navbar-link {
-    color: #fcfeff;
-}
-
-.navbar-default .navbar-link:hover {
-    color: #000490;
-}
-
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-        color: #fcfeff;
+    
+    #containerBanner {
+        padding: 50px;
+        width: 100%;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
-        color: #000490;
+    
+    #foto {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
-    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
-        color: #000490;
-        background-color: #0081fb;
+    
+    img#perfil {
+        width: 100%;
+        height: 270px;
+        border-radius: 100%;
     }
-}
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .col-sm-3 {
+        font-family: monospace;
+        font-weight: bold;
+        padding: 20px;
+        border: 2px solid white;
+        color: #ffffff;
+        font-size: 1.7rem;
+        margin: 10px;
+        width: 12%;
+    }
+    
+    .col-sm-3:hover {
+        cursor: pointer;
+        border-color: #00059000;
+        transition: 0.3s;
+        transform: scale(0.95);
+    }
+    
+    #insta:hover {
+        background-color: #f700b9e3;
+    }
+    
+    #wpp:hover {
+        background-color: #059b00e3;
+    }
+    
+    #link:hover {
+        background-color: #001380e3;
+    }
+    
+    #git:hover {
+        background-color: #0a0a0ae3;
+    }
+    /*css animação do banner*/
+    
+    @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+    * {
+        margin: 0;
+    }
+    
+    .typewriter {
+        font-family: 'Anonymous Pro', monospace;
+        width: 50%;
+    }
+    
+    h1,
+    h3 {
+        font-family: monospace;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        display: inline-block;
+        font-weight: normal;
+        color: white;
+    }
+    
+    h1 {
+        border-bottom: #ffffff solid 1px;
+        padding: 5px;
+    }
+    
+    h1:after {
+        content: '';
+        display: inline-block;
+        background-color: white;
+        margin-left: 2px;
+        height: 25px;
+        width: 4px;
+        animation: cursor 0.4s infinite;
+    }
+    /*efeito letrinha banner*/
+    
+    @keyframes cursor {
+        0% {
+            opacity: 1;
+        }
+        49% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    /*conteudo*/
+    /*sobre*/
+    
+    .col-sm-8 {
+        padding: 15px;
+    }
+    
+    #containerConteudo1 {
+        width: 100%;
+    }
+    
+    #cont1,
+    #cont2,
+    #cont3 {
+        background-color: #0e0e0e;
+        color: white;
+        padding: 50px;
+        font-family: Comfortaa;
+        font-size: 2rem;
+    }
+    
+    #h2Sobre {
+        background-image: linear-gradient(#0016bd, #00e1ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(45deg, rgb(11, 0, 165), rgb(0, 204, 255)) 1;
+        padding: 3px;
+        width: 70%;
+    }
+    
+    #colSobre {
+        margin: 15px;
+    }
+    /*skills*/
+    
+    #icons {
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    #textFrame {
+        text-transform: uppercase;
+        font-size: 3.6rem;
+        background-image: linear-gradient(#001fff, #00e1ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+    
+    .row-skills {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .barProg {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .barraP {
+        font-family: Comfortaa;
+        width: 70%;
+        background-color: #1d1d1d;
+    }
+    
+    .ls-theme-gray div[data-ls-module="progressBar"] span,
+    html div[data-ls-module="progressBar"] span {
+        background: linear-gradient(to right, #000490, rgb(2, 162, 255));
+        font-size: 2rem;
+    }
+    
+    #textSkill {
+        background-image: linear-gradient(#0016bd, #00e1ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: Comfortaa;
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+    }
+    /*services*/
+    
+    #h2Service {
+        background-image: linear-gradient(#0016bd, #00e1ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(45deg, rgb(11, 0, 165), rgb(0, 204, 255)) 1;
+        padding: 5px;
+        font-size: 3.3rem;
+    }
+    
+    h4#h2Service {
+        background-image: linear-gradient(#00c3ff, #000ba0);
+        border: none;
+    }
+    
+    .ls-collapse {
+        background-color: #1a1a1a;
+        border: 1px rgb(24, 24, 24) solid;
+    }
+    
+    a#powerfit {
+        font-family: Comfortaa;
+        text-decoration: none;
+        background-image: linear-gradient(#0016bd, #00e1ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 1.7rem;
+    }
+    
+    a#powerfit:hover {
+        color: #008ab4;
+        transition: 1s;
+    }
+    
+    .ls-theme-gray .ls-collapse .ls-collapse-header::before,
+    html .ls-collapse .ls-collapse-header::before {
+        color: rgb(6, 167, 0);
+        border: 3px solid rgb(6, 167, 0);
+    }
+    /*nav bar*/
+    
+    .navbar-default {
+        background-color: #0f0f0f;
+        border: none;
+        -webkit-box-shadow: 0px 0px 8px -3px rgba(95, 95, 95, 0.4);
+        box-shadow: 0px 0px 8px -3px rgba(95, 95, 95, 0.4);
+        font-family: Comfortaa;
+        padding: 5px;
+    }
+    
+    .navbar-default .navbar-brand {
+        color: #ecf0f1;
+    }
+    
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #c3c3c3;
+    }
+    
+    .navbar-default .navbar-text {
+        color: #ecf0f1;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: #ecf0f1;
+    }
+    
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:focus {
+        color: #c3c3c3;
+    }
+    
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>.active>a:focus {
+        color: #c3c3c3;
+        background-color: #161616;
+    }
+    
+    .navbar-default .navbar-nav>.open>a,
+    .navbar-default .navbar-nav>.open>a:hover,
+    .navbar-default .navbar-nav>.open>a:focus {
+        color: #c3c3c3;
+        background-color: #161616;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border-color: #161616;
+        border: none;
+    }
+    
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #161616;
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ecf0f1;
+    }
+    
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #ecf0f1;
+    }
+    
+    .navbar-default .navbar-link {
+        color: #ecf0f1;
+    }
+    
+    .navbar-default .navbar-link:hover {
+        color: #c3c3c3;
+    }
+    
+    @media (max-width: 767px) {
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+            color: #c3c3c3;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+        .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+            color: #c3c3c3;
+            background-color: #161616;
+        }
+    }

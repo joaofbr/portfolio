@@ -29,10 +29,10 @@
                 </div>
                 <div id="barraNav" class="collapse navbar-collapse">
                     <ul style="font-size: 1.5rem;" class="nav navbar-nav navbar-left">
-                        <li><a href="#top">HOME</a></li>
-                        <li><a href="#containerConteudo1">SOBRE</a></li>
-                        <li><a href="#cont2">SKILLS</a></li>
-                        <li><a href="#">SERVIÇOS</a></li>
+                        <li style="font-size: 1.5rem;"><a href="#top">HOME</a></li>
+                        <li style="font-size: 1.5rem;"><a href="#containerConteudo1">SOBRE</a></li>
+                        <li style="font-size: 1.5rem;"><a href="#cont2">SKILLS</a></li>
+                        <li style="font-size: 1.5rem;"><a href="#cont3">SERVIÇOS</a></li>
                     </ul>
                 </div>
             </div>
@@ -127,6 +127,53 @@
                 </div>
             </div>
         </div>
+        <div style="margin-bottom:-50px; padding-bottom: 0px;" class="row" id="cont3">
+            <div class="col-sm-12">
+                <h2 data-aos="fade-down" class="text-left" id="h2Service">SERVIÇOS</h2>
+            </div>
+        </div>
+        <div id="cont3" class="row">
+            <div data-aos="fade-down" class="col-sm-8">
+                <h4 id="h2Service">Powerfit</h4>
+                <p style="font-size: 1.7rem;">O Powerfit é um sistema para gestão e análise de desenvolvimento pessoal em uma academia. O site em geral conta com:</p>
+                <ul>
+                    <li style="font-size: 1.7rem;">Interfaces leves e agradáveis;</li>
+                    <li style="font-size: 1.7rem;">Cadastro e Login de usuário;</li>
+                    <li style="font-size: 1.7rem;">Layouts responsivos;</li>
+                    <li style="font-size: 1.7rem;">Dashboard:</li>
+                </ul>
+                <li style="font-size: 1.7rem;">Controle de IMC;</li>
+                <li style="font-size: 1.7rem;">Gerenciamento de alimentação;</li>
+                <li style="font-size: 1.7rem;">Gerenciamento de atividades físicas;</li>
+                <li style="font-size: 1.7rem;">Gerenciamento de pressão arterial;</li>
+                <li style="font-size: 1.7rem;">Gerenciamento de peso;</li>
+                <h4 id="h2Service">Ferramentas Utilizadas</h4>
+                <p style="font-size: 1.7rem;">Para o desenvolvimento do site, foram utilizadas as seguintes ferramentas (além de outros frameworks que foram usados para melhorar o desempenho do site):</p>
+                <ul>
+                    <li style="font-size: 1.7rem;">HTML;</li>
+                    <li style="font-size: 1.7rem;">PHP;</li>
+                    <li style="font-size: 1.7rem;">CSS;</li>
+                    <li style="font-size: 1.7rem;">Bootstrap;</li>
+                    <li style="font-size: 1.7rem;">jQuery;</li>
+                    <li style="font-size: 1.7rem;">JavaScript;</li>
+                    <li style="font-size: 1.7rem;">Ajax;</li>
+                    <li style="font-size: 1.7rem;">SQL Server;</li>
+                    <li style="font-size: 1.7rem;">AOS Library;</li>
+                </ul>
+            </div>
+            <div data-aos="fade" data-aos-duration="1000" class="col-sm-4">
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/9yBrvsHSc5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/dZwTzIonw0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div data-ls-module="collapse" data-target="#0" class="ls-collapse">
+                    <a href="#" class="ls-collapse-header">
+                        <h3 style="font-family: Comfortaa; " class="ls-collapse-title">Repositório GitHub</h3>
+                    </a>
+                    <div class="ls-collapse-body" id="0">
+                        <a id="powerfit" href="https://github.com/Joaoxxzy/Projeto_Powerfit">Powerfit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <!--animação-->
@@ -143,7 +190,7 @@
     var html = document.getElementById("text").innerHTML;
     var attr = tag.setAttribute("data", html);
     var txt = tag.getAttribute("data");
-    var speed = 190;
+    var speed = 90;
 
     function typeWriter() {
         if (i <= txt.length) {
@@ -174,6 +221,7 @@
 <style type="text/css">
     .navbar-top {
         background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
     }
     
     .navbar-top1 {
