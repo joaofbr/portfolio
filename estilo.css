@@ -9,6 +9,54 @@
         width: 100%;
         height: 100%;
     }
+    
+    i#down,
+    #up {
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+    }
+    
+    i#down:hover {
+        animation: pulse 2s 3s ease-out infinite;
+        transition: 1s;
+    }
+    
+    .seta {
+        animation: animate 1.5s infinite;
+    }
+    
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            transform: translateY(5px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    }
+    
+    .seta2 {
+        animation: animate2 2s infinite;
+    }
+    
+    @keyframes animate2 {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(5px);
+        }
+    }
     /*banner*/
     
     video {
@@ -49,38 +97,49 @@
         justify-content: center;
     }
     
-    .col-sm-3 {
-        font-family: monospace;
-        font-weight: bold;
-        padding: 20px;
-        border: 2px solid white;
-        color: #ffffff;
-        font-size: 1.7rem;
-        margin: 10px;
-        width: 12%;
+    .contato {
+        width: 100%;
     }
     
-    .col-sm-3:hover {
-        cursor: pointer;
-        border-color: #00059000;
+    .ls-btn {
+        width: 15%;
+        padding: 20px;
+        margin-top: 15px;
+        border: 2px solid white;
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .ls-btn:hover {
+        text-decoration: none;
+        color: white;
+        border: #00059000;
+        transform: scale(0.97);
         transition: 0.3s;
-        transform: scale(0.95);
+    }
+    
+    .ls-btn:focus {
+        text-decoration: none;
+        color: rgb(12, 12, 12);
+        transition: 0.3s;
     }
     
     #insta:hover {
-        background-color: #f700b9e3;
+        background-color: #cf00c5;
     }
     
     #wpp:hover {
-        background-color: #059b00e3;
+        background-color: #06b600;
     }
     
     #link:hover {
-        background-color: #001380e3;
+        background-color: #001aad;
     }
     
     #git:hover {
-        background-color: #0a0a0ae3;
+        background-color: #0a0a0a;
     }
     /*css animação do banner*/
     
@@ -171,6 +230,11 @@
     #colSobre {
         margin: 15px;
     }
+    
+    #sobreSvg:hover {
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
     /*skills*/
     
     #icons {
@@ -178,7 +242,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 20px;
+        padding: 10px;
     }
     
     #textFrame {
@@ -199,7 +263,7 @@
     
     .barProg {
         width: 100%;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -214,7 +278,12 @@
     .ls-theme-gray div[data-ls-module="progressBar"] span,
     html div[data-ls-module="progressBar"] span {
         background: linear-gradient(to right, #000490, rgb(2, 162, 255));
-        font-size: 2rem;
+        font-size: 1rem;
+        height: 10px;
+    }
+    
+    [data-ls-module="progressBar"] span:before {
+        color: #ffffff00;
     }
     
     #textSkill {
@@ -226,8 +295,14 @@
         text-transform: uppercase;
         font-size: 2.3rem;
         margin-bottom: 10px;
+        padding: 0px;
     }
     /*services*/
+    
+    #cont3 {
+        display: flex;
+        flex-direction: column;
+    }
     
     #h2Service {
         background-image: linear-gradient(#0016bd, #00e1ff);
@@ -245,24 +320,45 @@
         border: none;
     }
     
-    .ls-collapse {
-        background-color: #1a1a1a;
-        border: 1px rgb(24, 24, 24) solid;
+    h5#h2Service {
+        font-size: 3rem;
+        border: none;
     }
     
-    a#powerfit {
+    h6#h2Service {
+        font-size: 2.5rem;
+    }
+    
+    #textService {
+        font-size: 1.4rem;
+        color: #e7e7e7;
+    }
+    
+    li#textService {
+        margin-left: 15px;
+    }
+    
+    a#repositorio {
         font-family: Comfortaa;
         text-decoration: none;
-        background-image: linear-gradient(#0016bd, #00e1ff);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        font-size: 1.7rem;
+        background-color: #0f0f0f;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        color: #ffffff;
     }
     
-    a#powerfit:hover {
-        color: #008ab4;
-        transition: 1s;
+    a#repositorio:hover {
+        transition: 0.5s;
+        color: #cccccc;
+        background-color: #080808;
+        transform: scale(2deg);
+    }
+    
+    .ls-collapse {
+        padding: 10px;
+        background-color: #131313;
+        border-image: linear-gradient(45deg, rgb(11, 0, 165), rgb(0, 204, 255)) 1;
     }
     
     .ls-theme-gray .ls-collapse .ls-collapse-header::before,
@@ -270,10 +366,34 @@
         color: rgb(6, 167, 0);
         border: 3px solid rgb(6, 167, 0);
     }
+    /*footer*/
+    
+    footer {
+        background-color: #080808;
+        padding: 50px;
+    }
+    
+    p#footer {
+        font-size: 1.5rem;
+        font-family: Comfortaa;
+        color: white;
+    }
+    
+    i#footer {
+        font-size: 3.2rem;
+        margin-left: 20px;
+        color: #0056c7;
+        margin-right: 10px;
+    }
+    
+    i#footer:hover {
+        color: #002352;
+        transition: 0.5s;
+    }
     /*nav bar*/
     
     .navbar-default {
-        background-color: #0f0f0f;
+        background-color: #0c0c0c;
         border: none;
         -webkit-box-shadow: 0px 0px 8px -3px rgba(95, 95, 95, 0.4);
         box-shadow: 0px 0px 8px -3px rgba(95, 95, 95, 0.4);

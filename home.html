@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="estilo.css">
     <title>meu portfólio</title>
 </head>
-
+<!--header-->
 <header>
     <!--nav bar-->
     <nav class="navbar navbar-default navbar-fixed-top navbar-top navbar-top1" id="menu">
@@ -57,128 +57,153 @@
             <br>
             <h3 data-aos="fade" data-aos-duration="3000" id="text">Dev Front-End</h3>
         </div>
-        <div data-aos="fade-up" data-aos-duration="1000" style="margin-top: 10px;" class="row text-center" id="rowBanner">
-            <div id="git" class="col-sm-3"><i style="margin-right: 5px;" class="fa fa-github"></i>GitHub</div>
-            <div id="link" class="col-sm-3"><i style="margin-right: 5px;" class="fa fa-linkedin"></i>Linkedin</div>
-            <div id="insta" class="col-sm-3"><i style="margin-right: 5px;" class="fa fa-instagram"></i>Instagram</div>
-            <div id="wpp" class="col-sm-3"><i style="margin-right: 5px;" class="fa fa-whatsapp"></i>WhatsApp</div>
+        <div class="text-center contato'">
+            <a href="https://github.com/joaofbr" target="_blank" class="ls-btn" id="git"><i style="margin-right: 5px;" class="fa fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/joaofbr1/" target="_blank" class="ls-btn" id="link"><i style="margin-right: 5px;" class="fa fa-linkedin"></i> Linkedin</a>
+            <a href="https://www.instagram.com/fbr.joao/" target="_blank" class="ls-btn" id="insta"><i style="margin-right: 5px;" class="fa fa-instagram"></i> Instagram</a>
+            <a id="wpp" href="https://contate.me/joaofbr" target="_blank" class="ls-btn" id="wpp"><i style="margin-right: 5px;" class="fa fa-whatsapp"></i> WhatsApp</a>
         </div>
+        <nav id="down">
+            <div class="container text-center seta">
+                <a href="#containerConteudo1"><span ><i id="down" class="fa fa-chevron-down"></i></span></a>
+            </div>
+        </nav>
     </div>
-    <!--1 conteudo-->
+    <!--sobre-->
     <div id="containerConteudo1" class="container">
         <div id="cont1" class="row">
             <div id="colSobre" class="col-sm-8">
                 <div id="textSobre">
                     <h2 id="h2Sobre" data-aos="fade">Sobre</h2>
-                    <br>
                     <p style="font-size: 1.7rem;" data-aos="fade-up">Meu nome é João Pedro, tenho 18 anos, sou estudante de Licenciatura em Computação no Instituto Federal de Educação Ciência e Tecnologia do Rio de Janeiro.</p>
                     <br>
                     <h2 id="h2Sobre" data-aos="fade">Formação Acadêmica</h2>
-                    <br>
                     <li style="font-size: 1.7rem;" data-aos="fade-up">Licenciatura em Computação - IFRJ</li>
-                    <br>
                     <li style="font-size: 1.7rem;" data-aos="fade-up">Técnico em Informática - IFRJ</li>
                 </div>
             </div>
-            <div data-aos="fade-up" id="colSobre" class="col-sm-4">
-                <img height="500" width="400" src="https://raw.githubusercontent.com/gist/Joaoxxzy/213af55eadc7aa913b4212f0f22cd7fa/raw/a83c18e976f91168ac2bb53c4abd68d9134bfae3/githubcard.svg" />
+            <div id="sobreSvg" data-aos="fade-up" id="colSobre" class="col-sm-4">
+                <a class="ls-tooltip-left" aria-label="visite meu perfil no github" href="https://github.com/joaofbr"><img height="500" width="400" src="https://raw.githubusercontent.com/gist/joaofbr/ada1aea75ab1c6d813ea20ff240a6fef/raw/8814fd28ab7e89d3c2788186f1ecf9d75f8ee285/githubcard.svg" /></a>
             </div>
         </div>
+        <!--skills-->
         <div id="cont2" class="row">
             <div id="skills">
                 <div class="text-center col-sm-12" id="icons">
                     <h2 data-aos="fade-down" id="textFrame">Skills</h2>
-                    <img data-aos="fade-left" data-aos-duration="1600" height=" 70 " width="70 " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg " />
-                    <img data-aos="fade-left" data-aos-duration="1400" height="70" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
-                    <img data-aos="fade-left" data-aos-duration="1200" height=" 70 " width="70 " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg " />
-                    <img data-aos="fade-left" data-aos-duration="1000" height="70" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                    <img data-aos="fade-left" data-aos-duration="800" height=" 70 " width="70 " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg " />
-                    <img data-aos="fade-left" data-aos-duration="600" height="70" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" />
-                    <img data-aos="fade-left" data-aos-duration="400" height=" 70 " width="70 " src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg " />
-                    <img data-aos="fade-left" data-aos-duration="200" height="70" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
+                    <img data-aos="fade-left" data-aos-duration="1600" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg " />
+                    <img data-aos="fade-left" data-aos-duration="1400" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+                    <img data-aos="fade-left" data-aos-duration="1200" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg " />
+                    <img data-aos="fade-left" data-aos-duration="1000" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                    <img data-aos="fade-left" data-aos-duration="800" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg " />
+                    <img data-aos="fade-left" data-aos-duration="600" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" />
+                    <img data-aos="fade-left" data-aos-duration="400" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg " />
+                    <img data-aos="fade-left" data-aos-duration="200" height="60" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
                 </div>
                 <div class="row">
-                    <div class="barProg col-sm-6">
-                        <h3 data-aos="fade-left" id="textSkill">html</h3>
+                    <div data-aos="fade-right" class="barProg col-sm-6">
+                        <h3 id="textSkill">html</h3>
                         <div data-ls-module="progressBar" role="progressbar" aria-valuenow="75" class="barraP ls-animated"></div>
                         <br>
-                        <h3 data-aos="fade-left" id="textSkill">css</h3>
-                        <div data-ls-module="progressBar" role="progressbar" aria-valuenow="85" class="barraP ls-animated"></div>
+                        <h3 id="textSkill">css</h3>
+                        <div data-ls-module="progressBar" role="progressbar" aria-valuenow="75" class="barraP ls-animated"></div>
                         <br>
-                        <h3 data-aos="fade-left" id="textSkill">bootstrap</h3>
+                        <h3 id="textSkill">bootstrap</h3>
                         <div data-ls-module="progressBar" role="progressbar" aria-valuenow="70" class="barraP ls-animated"></div>
                         <br>
-                        <h3 data-aos="fade-left" id="textSkill">jquery</h3>
+                        <h3 id="textSkill">jquery</h3>
                         <div data-ls-module="progressBar" role="progressbar" aria-valuenow="65" class="barraP ls-animated"></div>
                     </div>
-                    <div class="barProg col-sm-6">
-                        <h3 data-aos="fade-left" id="textSkill">javascript</h3>
+                    <div data-aos="fade-right" class="barProg col-sm-6">
+                        <h3 id="textSkill">javascript</h3>
                         <div data-ls-module="progressBar" role="progressbar" aria-valuenow="65" class="barraP ls-animated"></div>
                         <br>
-                        <h3 data-aos="fade-left" id="textSkill">mysql</h3>
+                        <h3 id="textSkill">mysql</h3>
                         <div data-ls-module="progressBar" role="progressbar" aria-valuenow="70" class="barraP ls-animated"></div>
                         <br>
-                        <h3 data-aos="fade-left" id="textSkill">locaweb style</h3>
+                        <h3 id="textSkill">c</h3>
                         <div data-ls-module="progressBar" role="progressbar" aria-valuenow="45" class="barraP ls-animated"></div>
                         <br>
-                        <h3 data-aos="fade-left" id="textSkill">mysql</h3>
-                        <div data-ls-module="progressBar" role="progressbar" aria-valuenow="70" class="barraP ls-animated"></div>
+                        <h3 id="textSkill">canva</h3>
+                        <div data-ls-module="progressBar" role="progressbar" aria-valuenow="80" class="barraP ls-animated"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div style="margin-bottom:-50px; padding-bottom: 0px;" class="row" id="cont3">
-            <div class="col-sm-12">
-                <h2 data-aos="fade-down" class="text-left" id="h2Service">SERVIÇOS</h2>
-            </div>
-        </div>
+        <!--serviços-->
         <div id="cont3" class="row">
-            <div data-aos="fade-down" class="col-sm-8">
-                <h4 id="h2Service">Powerfit</h4>
-                <p style="font-size: 1.7rem;">O Powerfit é um sistema para gestão e análise de desenvolvimento pessoal em uma academia. O site em geral conta com:</p>
-                <ul>
-                    <li style="font-size: 1.7rem;">Interfaces leves e agradáveis;</li>
-                    <li style="font-size: 1.7rem;">Cadastro e Login de usuário;</li>
-                    <li style="font-size: 1.7rem;">Layouts responsivos;</li>
-                    <li style="font-size: 1.7rem;">Dashboard:</li>
-                </ul>
-                <li style="font-size: 1.7rem;">Controle de IMC;</li>
-                <li style="font-size: 1.7rem;">Gerenciamento de alimentação;</li>
-                <li style="font-size: 1.7rem;">Gerenciamento de atividades físicas;</li>
-                <li style="font-size: 1.7rem;">Gerenciamento de pressão arterial;</li>
-                <li style="font-size: 1.7rem;">Gerenciamento de peso;</li>
-                <h4 id="h2Service">Ferramentas Utilizadas</h4>
-                <p style="font-size: 1.7rem;">Para o desenvolvimento do site, foram utilizadas as seguintes ferramentas (além de outros frameworks que foram usados para melhorar o desempenho do site):</p>
-                <ul>
-                    <li style="font-size: 1.7rem;">HTML;</li>
-                    <li style="font-size: 1.7rem;">PHP;</li>
-                    <li style="font-size: 1.7rem;">CSS;</li>
-                    <li style="font-size: 1.7rem;">Bootstrap;</li>
-                    <li style="font-size: 1.7rem;">jQuery;</li>
-                    <li style="font-size: 1.7rem;">JavaScript;</li>
-                    <li style="font-size: 1.7rem;">Ajax;</li>
-                    <li style="font-size: 1.7rem;">SQL Server;</li>
-                    <li style="font-size: 1.7rem;">AOS Library;</li>
-                </ul>
+            <div class="col-sm-12">
+                <h2 style="border: none;" data-aos="fade-down" class="text-center" id="h2Service">SERVIÇOS</h2>
             </div>
-            <div data-aos="fade" data-aos-duration="1000" class="col-sm-4">
-                <iframe width="400" height="200" src="https://www.youtube.com/embed/9yBrvsHSc5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="400" height="200" src="https://www.youtube.com/embed/dZwTzIonw0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div data-ls-module="collapse" data-target="#0" class="ls-collapse">
-                    <a href="#" class="ls-collapse-header">
-                        <h3 style="font-family: Comfortaa; " class="ls-collapse-title">Repositório GitHub</h3>
+            <div class="row">
+                <div class="col-sm-12 ls-collapse" data-target="#0" data-ls-module="collapse">
+                    <a style="text-decoration: none;" href="#" class="ls-collapse-header">
+                        <h5 id="h2Service" class="ls-collapse-title">
+                            Powerfit
+                        </h5>
+                        <p>O Powerfit é um sistema para gestão e análise de desenvolvimento pessoal em uma academia.</p>
                     </a>
-                    <div class="ls-collapse-body" id="0">
-                        <a id="powerfit" href="https://github.com/Joaoxxzy/Projeto_Powerfit">Powerfit</a>
+                    <div class="ls-collapse-body" id="30">
+                        <div data-aos="fade-up" data-aos-duration="1000" class="col-sm-8">
+                            <h6 id="h2Service">Visão geral</h6>
+                            <ul>
+                                <li id="textService">Interfaces leves e agradáveis;</li>
+                                <li id="textService">Cadastro e Login de usuário;</li>
+                                <li id="textService">Layouts responsivos;</li>
+                                <li id="textService">Dashboard:</li>
+                            </ul>
+                            <li id="textService">Controle de IMC;</li>
+                            <li id="textService">Gerenciamento de alimentação;</li>
+                            <li id="textService">Gerenciamento de atividades físicas;</li>
+                            <li id="textService">Gerenciamento de pressão arterial;</li>
+                            <li id="textService">Gerenciamento de peso;</li>
+                            <h6 id="h2Service">Ferramentas Utilizadas</h6>
+                            <ul>
+                                <li id="textService">HTML;</li>
+                                <li id="textService">PHP;</li>
+                                <li id="textService">CSS;</li>
+                                <li id="textService">Bootstrap;</li>
+                                <li id="textService">jQuery;</li>
+                                <li id="textService">JavaScript;</li>
+                                <li id="textService">Ajax;</li>
+                                <li id="textService">SQL Server;</li>
+                                <li id="textService">AOS Library;</li>
+                            </ul>
+                        </div>
+                        <div data-aos="fade" data-aos-duration="2500" class="col-sm-4">
+                            <iframe width="350" height="200" src="https://www.youtube.com/embed/9yBrvsHSc5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe style="margin-bottom: 10px;" width="350" height="200" src="https://www.youtube.com/embed/dZwTzIonw0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <a id="repositorio" href="https://github.com/Joaoxxzy/Projeto_Powerfit" target="_blank">Repositório GitHub <i class="fa fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<!--animação-->
+<!--footer-->
+<footer>
+    <nav id="down">
+        <div class="container text-center seta2">
+            <a class="ls-tooltip-left" aria-label="Voltar ao topo" href="#top"><span ><i id="up" class="fa fa-chevron-up"></i></span></a>
+        </div>
+    </nav>
+    <nav class="navbar-left">
+        <p id="footer">&copy; 2022 Copyright - João Pedro</p>
+    </nav>
+    <section class="navbar-right">
+        <a id="gitF" href="https://github.com/joaofbr" target="_blank"><i class="fa fa-github" id="footer"></i></a>
+        <a id="instaF" href="https://www.instagram.com/fbr.joao/" target="_blank"><i class="fa fa-instagram" id="footer"></i></a>
+        <a id="linkF" href="https://www.linkedin.com/in/joaofbr1/" target="_blank"><i class="fa fa-linkedin" id="footer"></i></a>
+        <a id="wppF" href="https://contate.me/joaofbr" target="_blank"><i class="fa fa-whatsapp" id="footer"></i></a>
+        <a class="ls-tooltip-left" aria-label="Clique para baixar meu curriculo" href="curriculoJoao.pdf" download="curriculoJoao.pdf" target="_blank"><i class="fa fa-file-pdf-o" id="footer"></i></a>
+    </section>
+</footer>
+<!--animação aos link-->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--animação aos script-->
 <script>
     AOS.init();
 </script>
@@ -201,7 +226,7 @@
     }
     typeWriter();
 </script>
-<!--navbar transition-->
+<!--navbar transition script-->
 <script>
     (function() {
         var menu = document.getElementById('menu');
@@ -217,7 +242,19 @@
         });
     })();
 </script>
-
+<!--animação scroll-->
+<script>
+    $('nav a').click(function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            targetOffset = $(id).offset().top,
+            menuHeight = $('nav').innerHeight();
+        $('html, body').animate({
+            scrollTop: targetOffset - menuHeight + 30
+        }, 600);
+    });
+</script>
+<!--navbar transparente estilo-->
 <style type="text/css">
     .navbar-top {
         background-color: rgba(0, 0, 0, 0);
