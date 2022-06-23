@@ -524,6 +524,7 @@
         /*skills*/
         #textFrame {
             font-size: 2rem;
+            margin-top: 30px;
         }
         #textSkill {
             font-size: 1.6rem;
