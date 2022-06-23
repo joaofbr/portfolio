@@ -96,51 +96,6 @@
         align-items: center;
         justify-content: center;
     }
-    
-    .contato {
-        width: 100%;
-    }
-    
-    .ls-btn {
-        width: 15%;
-        padding: 20px;
-        margin-top: 15px;
-        border: 2px solid white;
-        background-color: rgba(255, 255, 255, 0);
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    
-    .ls-btn:hover {
-        text-decoration: none;
-        color: white;
-        border: #00059000;
-        transform: scale(0.97);
-        transition: 0.3s;
-    }
-    
-    .ls-btn:focus {
-        text-decoration: none;
-        color: rgb(12, 12, 12);
-        transition: 0.3s;
-    }
-    
-    #insta:hover {
-        background-color: #cf00c5;
-    }
-    
-    #wpp:hover {
-        background-color: #06b600;
-    }
-    
-    #link:hover {
-        background-color: #001aad;
-    }
-    
-    #git:hover {
-        background-color: #0a0a0a;
-    }
     /*css animação do banner*/
     
     @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
@@ -150,13 +105,13 @@
     }
     
     .typewriter {
-        font-family: 'Anonymous Pro', monospace;
+        font-family: 'Anonymous Pro', Comfortaa;
         width: 50%;
     }
     
     h1,
     h3 {
-        font-family: monospace;
+        font-family: Comfortaa;
         overflow: hidden;
         margin: 0 auto;
         text-align: center;
@@ -167,17 +122,18 @@
     
     h1 {
         border-bottom: #ffffff solid 1px;
-        padding: 5px;
+        padding-bottom: 2px;
+        margin-bottom: 10px;
     }
     
     h1:after {
         content: '';
         display: inline-block;
         background-color: white;
-        margin-left: 2px;
-        height: 25px;
-        width: 4px;
-        animation: cursor 0.4s infinite;
+        margin-left: 5px;
+        height: 35px;
+        width: 3px;
+        animation: cursor 0.7s infinite;
     }
     /*efeito letrinha banner*/
     
@@ -204,6 +160,7 @@
     
     #containerConteudo1 {
         width: 100%;
+        margin-top: 60px;
     }
     
     #cont1,
@@ -235,6 +192,15 @@
         transform: scale(1.02);
         transition: 0.5s;
     }
+    
+    #imgSvg {
+        height: 500px;
+        width: 400px;
+    }
+    
+    #textoSobre {
+        font-size: 1.7rem;
+    }
     /*skills*/
     
     #icons {
@@ -245,6 +211,11 @@
         padding: 10px;
     }
     
+    #iconsSvg {
+        width: 60px;
+        height: 60px;
+    }
+    
     #textFrame {
         text-transform: uppercase;
         font-size: 3.6rem;
@@ -252,8 +223,9 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        margin-bottom: 40px;
-        font-weight: bold;
+        margin-bottom: 15px;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(45deg, rgb(11, 0, 165), rgb(0, 204, 255)) 1;
     }
     
     .row-skills {
@@ -279,7 +251,6 @@
     html div[data-ls-module="progressBar"] span {
         background: linear-gradient(to right, #000490, rgb(2, 162, 255));
         font-size: 1rem;
-        height: 10px;
     }
     
     [data-ls-module="progressBar"] span:before {
@@ -293,7 +264,7 @@
         color: transparent;
         font-family: Comfortaa;
         text-transform: uppercase;
-        font-size: 2.1rem;
+        font-size: 2rem;
         margin-bottom: 1px;
         padding: 0px;
     }
@@ -365,6 +336,11 @@
     html .ls-collapse .ls-collapse-header::before {
         color: rgb(6, 167, 0);
         border: 3px solid rgb(6, 167, 0);
+    }
+    
+    iframe {
+        width: 350px;
+        height: 200px;
     }
     /*footer*/
     
@@ -477,5 +453,150 @@
         .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
             color: #c3c3c3;
             background-color: #161616;
+        }
+    }
+    /*media querie*/
+    
+    @media (max-width: 767px) {
+        /*banner*/
+        #foto {
+            width: 200px;
+            height: 230px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        img#perfil {
+            width: 100%;
+            height: 170px;
+            margin: auto;
+        }
+        h1#text {
+            font-size: 1.65rem;
+        }
+        h3#text {
+            font-size: 1.5rem;
+        }
+        h1 {
+            width: 100%;
+        }
+        h1:after {
+            height: 15px;
+        }
+        #textBan {
+            margin-top: px;
+        }
+        /*conteudo*/
+        #containerConteudo1 {
+            margin-top: 60px;
+        }
+        /*sobre*/
+        #cont1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: left;
+            padding: 0px;
+        }
+        #textoSobre {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        h2#h2Sobre {
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+        }
+        #imgSvg {
+            height: 300px;
+            width: 200px;
+        }
+        /*skills*/
+        #textFrame {
+            font-size: 2.5rem;
+        }
+        #textSkill {
+            font-size: 1.5rem;
+        }
+        #icons {
+            padding: 0px;
+        }
+        #iconsSvg {
+            width: 27px;
+            height: 27px;
+        }
+        #cont2 {
+            padding: 10px;
+        }
+        .ls-theme-gray div[data-ls-module="progressBar"] span,
+        html div[data-ls-module="progressBar"] span {
+            height: 0px;
+        }
+        #progRow {
+            padding: 30px;
+        }
+        /*services*/
+        h5#h2Service {
+            font-size: 2rem;
+        }
+        h6#h2Service {
+            font-size: 1.5rem;
+        }
+        p#pService {
+            font-size: 1rem;
+            margin: 5px;
+            margin-right: 10px;
+            text-align: left;
+        }
+        #textService {
+            font-size: 1rem;
+        }
+        #cont3 {
+            padding: 0px;
+        }
+        #rowService {
+            width: 100%;
+        }
+        #colService {
+            width: 95%;
+        }
+        iframe {
+            width: 250px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        #vidService {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a#repositorio {
+            margin-top: 8px;
+            padding: 8px;
+            font-size: 1.3rem;
+        }
+        h2#h2Service {
+            font-size: 2.5rem;
+        }
+        /*footer*/
+        #rodape {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        p#footer {
+            margin-top: 10px;
+            padding: 10px;
+            padding-top: 15px;
+            font-size: 1.2rem;
+        }
+        i#footer {
+            font-size: 2.4rem;
+            text-align: center;
         }
     }
