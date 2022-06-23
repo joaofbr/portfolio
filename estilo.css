@@ -9,6 +9,7 @@
         width: 100%;
         height: 100%;
     }
+    /*site*/
     
     i#down,
     #up {
@@ -80,14 +81,16 @@
     
     #foto {
         width: 300px;
-        height: 300px;
+        height: auto;
         border-radius: 100%;
+        border: 6px solid rgb(255, 255, 255);
+        padding: 0px;
     }
     
     img#perfil {
         width: 100%;
         height: 270px;
-        border-radius: 100%;
+        border-radius: 50%;
     }
     
     .row {
@@ -459,22 +462,25 @@
     
     @media (max-width: 767px) {
         /*banner*/
+        body {
+            overflow-x: hidden;
+        }
         #foto {
-            width: 250px;
-            height: 320px;
+            width: auto;
+            height: auto;
             margin: auto;
             margin-top: 70px;
         }
         img#perfil {
             width: 100%;
-            height: 220px;
+            height: auto;
             margin: auto;
         }
         h1#text {
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
         h3#text {
-            font-size: 1.7rem;
+            font-size: 1.5rem;
         }
         h1 {
             width: 100%;
