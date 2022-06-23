@@ -79,8 +79,12 @@
         width: 100%;
     }
     
+    #textBan {
+        margin-top: 80px;
+    }
+    
     #foto {
-        width: 290px;
+        width: 280px;
         height: auto;
         border-radius: 100%;
         border: 6px solid rgb(255, 255, 255);
@@ -477,7 +481,7 @@
             margin: auto;
         }
         h1#text {
-            font-size: 1.6rem;
+            font-size: 1.7rem;
         }
         h3#text {
             font-size: 1.5rem;
@@ -489,11 +493,11 @@
             height: 15px;
         }
         #textBan {
-            margin-top: 20px;
+            margin-top: 60px;
         }
         /*conteudo*/
         #containerConteudo1 {
-            margin-top: 150px;
+            margin-top: 170px;
         }
         /*sobre*/
         #cont1 {
