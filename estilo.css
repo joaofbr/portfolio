@@ -506,6 +506,7 @@
             align-items: center;
             justify-content: left;
             padding: 0px;
+            padding-bottom: 40px;
         }
         #textoSobre {
             font-size: 1.1rem;
@@ -524,7 +525,6 @@
         /*skills*/
         #textFrame {
             font-size: 2rem;
-            margin-top: 30px;
         }
         #textSkill {
             font-size: 1.6rem;
@@ -537,7 +537,7 @@
             height: 28px;
         }
         #cont2 {
-            padding: 10px;
+            margin-top: -10px;
         }
         .ls-theme-gray div[data-ls-module="progressBar"] span,
         html div[data-ls-module="progressBar"] span {
@@ -567,7 +567,10 @@
             font-size: 1rem;
         }
         #cont3 {
+            margin-top: -10px;
             padding: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
         #rowService {
             width: 100%;
@@ -603,6 +606,7 @@
             margin: auto;
             padding-top: 20px;
             padding-bottom: 30px;
+            margin-top: -10px;
         }
         p#footer {
             margin-top: 10px;
