@@ -523,27 +523,31 @@
         }
         /*skills*/
         #textFrame {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
         #textSkill {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
         #icons {
             padding: 0px;
         }
         #iconsSvg {
-            width: 27px;
-            height: 27px;
+            width: 28px;
+            height: 28px;
         }
         #cont2 {
             padding: 10px;
         }
         .ls-theme-gray div[data-ls-module="progressBar"] span,
         html div[data-ls-module="progressBar"] span {
-            height: 0px;
+            height: 1px;
         }
         #progRow {
             padding: 30px;
+        }
+        .barraP {
+            width: 105px;
+            padding: 2px;
         }
         /*services*/
         h5#h2Service {
