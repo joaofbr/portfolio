@@ -287,14 +287,14 @@
     }
     
     #textSkill {
-        background-image: linear-gradient(#0016bd, #00e1ff);
+        background-image: linear-gradient(#0019d3, #00e1ff);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         font-family: Comfortaa;
         text-transform: uppercase;
-        font-size: 2.3rem;
-        margin-bottom: 10px;
+        font-size: 2.1rem;
+        margin-bottom: 1px;
         padding: 0px;
     }
     /*services*/
