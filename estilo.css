@@ -351,8 +351,12 @@
         border-radius: 10px;
         font-size: 1.5rem;
         color: #ffffff;
+        margin-bottom: 10px;
     }
-    
+    div#linksService{
+        display: flex;
+        flex-direction: column;
+    }
     a#repositorio:hover {
         transition: 0.5s;
         color: #cccccc;
@@ -385,6 +389,7 @@
     #obsService{
         color: #c5c5c5;
     }
+
     /*footer*/
     
     footer {
@@ -625,7 +630,6 @@
             align-items: center;
         }
         a#repositorio {
-            margin-top: 8px;
             padding: 8px;
             font-size: 1.3rem;
         }
