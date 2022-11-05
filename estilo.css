@@ -1,89 +1,97 @@
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
     @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
     * {
         margin: 0px;
         padding: 0px;
     }
-    
+
     body {
         background-color: transparent;
         width: 100%;
         height: 100%;
     }
+
     /*scrollbar style*/
-    
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         width: 10px;
         height: 10px;
     }
-    
-     ::-webkit-scrollbar-track {
+
+    ::-webkit-scrollbar-track {
         background-color: rgb(12, 12, 12);
         box-shadow: inset 0 0 5px rgb(22, 22, 22);
     }
-    
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: rgb(0, 81, 255);
         background: linear-gradient(0deg, rgb(0, 217, 255) 0%, rgb(0, 118, 252) 43%, rgb(0, 89, 255) 81%, rgb(4, 0, 211) 99%);
         border-radius: 100px;
     }
+
     /*animação da seta*/
-    
+
     i#down,
     #up {
         font-size: 3rem;
         color: white;
         text-align: center;
     }
-    
+
     i#down:hover {
         animation: pulse 2s 3s ease-out infinite;
         transition: 1s;
     }
-    
+
     .seta {
         animation: animate 1.5s infinite;
     }
-    
+
     @keyframes animate {
         0% {
             opacity: 0;
             transform: translateY(5px);
         }
+
         50% {
             opacity: 1;
         }
+
         100% {
             opacity: 0;
             transform: translateY(20px);
         }
     }
-    
+
     .seta2 {
         animation: animate2 2s infinite;
     }
-    
+
     @keyframes animate2 {
         0% {
             opacity: 0;
             transform: translateY(20px);
         }
+
         50% {
             opacity: 1;
         }
+
         100% {
             opacity: 0;
             transform: translateY(5px);
         }
     }
+
     /*banner*/
-    
+
     video {
         min-width: 100%;
         min-height: 100%;
     }
-    
+
     #bannerVid video {
         position: fixed;
         z-index: -1;
@@ -92,7 +100,7 @@
         object-fit: cover;
         width: 100%;
     }
-    
+
     #containerBanner {
         padding: 50px;
         width: 100%;
@@ -101,11 +109,11 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     #textBan {
         margin-top: 80px;
     }
-    
+
     #foto {
         width: 280px;
         height: auto;
@@ -113,26 +121,26 @@
         border: 6px solid rgb(255, 255, 255);
         padding: 0px;
     }
-    
+
     @keyframes rodar {
         to {
             transform: rotate(1turn);
         }
     }
-    
+
     img#perfil {
         width: 100%;
         height: 270px;
         border-radius: 50%;
     }
-    
+
     .row {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-    
+
     h1,
     h3 {
         font-family: Comfortaa;
@@ -143,13 +151,13 @@
         font-weight: normal;
         color: white;
     }
-    
+
     h1 {
         border-bottom: #ffffff solid 1px;
         padding-bottom: 2px;
         margin-bottom: 10px;
     }
-    
+
     h1:after {
         content: '';
         display: inline-block;
@@ -159,44 +167,50 @@
         width: 3px;
         animation: cursor 0.7s infinite;
     }
+
     /*css animação do banner*/
-    
+
     * {
         margin: 0;
     }
-    
+
     .typewriter {
         font-family: 'Anonymous Pro', Comfortaa;
         width: 50%;
     }
+
     /*efeito letrinha banner*/
-    
+
     @keyframes cursor {
         0% {
             opacity: 1;
         }
+
         49% {
             opacity: 1;
         }
+
         50% {
             opacity: 0;
         }
+
         100% {
             opacity: 0;
         }
     }
+
     /*conteudo*/
     /*sobre*/
-    
+
     .col-sm-8 {
         padding: 15px;
     }
-    
+
     #containerConteudo1 {
         width: 100%;
         margin-top: 70px;
     }
-    
+
     #cont1,
     #cont2,
     #cont3 {
@@ -206,7 +220,7 @@
         font-family: Comfortaa;
         font-size: 2rem;
     }
-    
+
     #h2Sobre {
         background-image: linear-gradient(#0016bd, #00e1ff);
         background-clip: text;
@@ -217,26 +231,27 @@
         padding: 3px;
         width: 70%;
     }
-    
+
     #colSobre {
         margin: 15px;
     }
-    
+
     #sobreSvg:hover {
         transform: scale(1.02);
         transition: 0.5s;
     }
-    
+
     #imgSvg {
         height: 500px;
         width: 400px;
     }
-    
+
     #textoSobre {
         font-size: 1.7rem;
     }
+
     /*skills*/
-    
+
     #icons {
         margin-bottom: 10px;
         align-items: center;
@@ -244,12 +259,12 @@
         width: 100%;
         padding: 10px;
     }
-    
+
     #iconsSvg {
         width: 60px;
         height: 60px;
     }
-    
+
     #textFrame {
         text-transform: uppercase;
         font-size: 3.6rem;
@@ -261,12 +276,12 @@
         border-bottom: 1px solid;
         border-image: linear-gradient(45deg, rgb(11, 0, 165), rgb(0, 204, 255)) 1;
     }
-    
+
     .row-skills {
         display: flex;
         flex-direction: column;
     }
-    
+
     .barProg {
         width: 100%;
         padding: 10px;
@@ -274,23 +289,23 @@
         flex-direction: column;
         align-items: center;
     }
-    
+
     .barraP {
         font-family: Comfortaa;
         width: 70%;
         background-color: #1d1d1d;
     }
-    
+
     .ls-theme-gray div[data-ls-module="progressBar"] span,
     html div[data-ls-module="progressBar"] span {
         background: linear-gradient(to right, #000490, rgb(2, 162, 255));
         font-size: 1rem;
     }
-    
+
     [data-ls-module="progressBar"] span:before {
         color: #ffffff00;
     }
-    
+
     #textSkill {
         background-image: linear-gradient(#0019d3, #00e1ff);
         background-clip: text;
@@ -302,13 +317,18 @@
         margin-bottom: 1px;
         padding: 0px;
     }
+
     /*services*/
-    
+
+    #rowService {
+        width: 100%;
+    }
+
     #cont3 {
         display: flex;
         flex-direction: column;
     }
-    
+
     #h2Service {
         background-image: linear-gradient(#0016bd, #00e1ff);
         background-clip: text;
@@ -319,30 +339,30 @@
         padding: 5px;
         font-size: 3.3rem;
     }
-    
+
     h4#h2Service {
         background-image: linear-gradient(#00c3ff, #000ba0);
         border: none;
     }
-    
+
     h5#h2Service {
         font-size: 3rem;
         border: none;
     }
-    
+
     h6#h2Service {
         font-size: 2.5rem;
     }
-    
+
     #textService {
         font-size: 1.4rem;
         color: #e7e7e7;
     }
-    
+
     li#textService {
         margin-left: 15px;
     }
-    
+
     a#repositorio {
         font-family: Comfortaa;
         text-decoration: none;
@@ -353,69 +373,74 @@
         color: #ffffff;
         margin-bottom: 10px;
     }
-    div#linksService{
+
+    div#linksService {
         display: flex;
         flex-direction: column;
     }
+
     a#repositorio:hover {
         transition: 0.5s;
         color: #cccccc;
         background-color: #080808;
         transform: scale(2deg);
     }
-    
+
     .ls-collapse {
         padding: 10px;
         padding-bottom: 25px;
         background-color: #131313;
         border-image: linear-gradient(45deg, rgb(11, 0, 165), rgb(0, 204, 255)) 1;
     }
-    
+
     .ls-theme-gray .ls-collapse .ls-collapse-header::before,
     html .ls-collapse .ls-collapse-header::before {
         color: rgb(6, 167, 0);
         border: 3px solid rgb(6, 167, 0);
     }
-    
+
     iframe {
         width: 350px;
         height: 200px;
     }
-    .imgLogin{
+
+    .imgLogin {
         margin-bottom: 15px;
         width: 100%;
         height: 100%;
     }
-    #obsService{
+
+    #obsService {
         color: #c5c5c5;
     }
 
     /*footer*/
-    
+
     footer {
         background-color: #080808;
         padding: 50px;
     }
-    
+
     p#footer {
         font-size: 1.5rem;
         font-family: Comfortaa;
         color: white;
     }
-    
+
     i#footer {
         font-size: 3.2rem;
         margin-left: 20px;
         color: #0056c7;
         margin-right: 10px;
     }
-    
+
     i#footer:hover {
         color: #002352;
         transition: 0.5s;
     }
+
     /*nav bar*/
-    
+
     .navbar-default {
         background-color: #0c0c0c;
         border: none;
@@ -424,78 +449,80 @@
         font-family: Comfortaa;
         padding: 5px;
     }
-    
+
     .navbar-default .navbar-brand {
         color: #ecf0f1;
     }
-    
+
     .navbar-default .navbar-brand:hover,
     .navbar-default .navbar-brand:focus {
         color: #c3c3c3;
     }
-    
+
     .navbar-default .navbar-text {
         color: #ecf0f1;
     }
-    
+
     .navbar-default .navbar-nav>li>a {
         color: #ecf0f1;
     }
-    
+
     .navbar-default .navbar-nav>li>a:hover,
     .navbar-default .navbar-nav>li>a:focus {
         color: #c3c3c3;
     }
-    
+
     .navbar-default .navbar-nav>.active>a,
     .navbar-default .navbar-nav>.active>a:hover,
     .navbar-default .navbar-nav>.active>a:focus {
         color: #c3c3c3;
         background-color: #161616;
     }
-    
+
     .navbar-default .navbar-nav>.open>a,
     .navbar-default .navbar-nav>.open>a:hover,
     .navbar-default .navbar-nav>.open>a:focus {
         color: #c3c3c3;
         background-color: #161616;
     }
-    
+
     .navbar-default .navbar-toggle {
         border-color: #161616;
         border: none;
     }
-    
+
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus {
         background-color: #161616;
     }
-    
+
     .navbar-default .navbar-toggle .icon-bar {
         background-color: #ecf0f1;
     }
-    
+
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
         border-color: #ecf0f1;
     }
-    
+
     .navbar-default .navbar-link {
         color: #ecf0f1;
     }
-    
+
     .navbar-default .navbar-link:hover {
         color: #c3c3c3;
     }
-    
+
     @media (max-width: 767px) {
         .navbar-default .navbar-nav .open .dropdown-menu>li>a {
             color: #ecf0f1;
         }
+
         .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
         .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
             color: #c3c3c3;
         }
+
         .navbar-default .navbar-nav .open .dropdown-menu>.active>a,
         .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
         .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
@@ -503,43 +530,54 @@
             background-color: #161616;
         }
     }
+
     /*media querie*/
-    
+
     @media (max-width: 767px) {
+
         /*banner*/
         body {
             overflow-x: hidden;
         }
+
         #foto {
             width: 200px;
             height: auto;
             margin: auto;
             margin-top: 90px;
         }
+
         img#perfil {
             width: 100%;
             height: auto;
             margin: auto;
         }
+
         h1#text {
             font-size: 1.7rem;
         }
+
         h3#text {
             font-size: 1.5rem;
         }
+
         h1 {
             width: 100%;
         }
+
         h1:after {
             height: 15px;
         }
+
         #textBan {
             margin-top: 60px;
         }
+
         /*conteudo*/
         #containerConteudo1 {
             margin-top: 170px;
         }
+
         /*sobre*/
         #cont1 {
             display: flex;
@@ -549,93 +587,121 @@
             padding: 0px;
             padding-bottom: 40px;
         }
+
         #textoSobre {
             font-size: 1.1rem;
             margin-bottom: 5px;
             text-align: left;
         }
+
         h2#h2Sobre {
             font-size: 2rem;
             width: 100%;
             text-align: center;
         }
+
         #imgSvg {
             height: 300px;
             width: 200px;
         }
+
         /*skills*/
         #textFrame {
             font-size: 2rem;
         }
+
         #textSkill {
             font-size: 1.6rem;
         }
+
         #icons {
             padding: 0px;
         }
+
         #iconsSvg {
             width: 28px;
             height: 28px;
         }
+
         #cont2 {
             margin-top: -10px;
         }
+
         .ls-theme-gray div[data-ls-module="progressBar"] span,
         html div[data-ls-module="progressBar"] span {
             height: 1px;
         }
+
         #progRow {
             padding: 30px;
         }
+
         .barraP {
             width: 105px;
             padding: 2px;
         }
+
         /*services*/
+
         h5#h2Service {
             font-size: 2rem;
         }
+
         h6#h2Service {
             font-size: 1.5rem;
         }
+
         p#pService {
             font-size: 1rem;
             margin: 5px;
             margin-right: 10px;
             text-align: left;
         }
+
         #textService {
             font-size: 1rem;
         }
+
         #cont3 {
             margin-top: -10px;
             padding: 0px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
+
         #rowService {
             width: 100%;
         }
+
         #colService {
             width: 95%;
         }
+
         iframe {
             width: 300px;
             height: 150px;
             margin-bottom: 10px;
         }
+
         #vidService {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         a#repositorio {
             padding: 8px;
             font-size: 1.3rem;
         }
+
         h2#h2Service {
             font-size: 2.5rem;
         }
+
+        .imgQr {
+            width: 200px;
+        }
+
         /*footer*/
         #rodape {
             display: flex;
@@ -648,18 +714,21 @@
             padding-bottom: 30px;
             margin-top: -10px;
         }
+
         p#footer {
             margin-top: 10px;
             padding: 10px;
             padding-top: 15px;
             font-size: 1.2rem;
         }
+
         i#footer {
             font-size: 2.4rem;
             text-align: center;
         }
+
         /*scrollbar*/
-         ::-webkit-scrollbar {
+        ::-webkit-scrollbar {
             width: 6px;
             height: 6px;
         }
