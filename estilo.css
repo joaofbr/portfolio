@@ -386,6 +386,10 @@
         transform: scale(2deg);
     }
 
+    .imgQr {
+        margin-bottom: 10px;
+    }
+
     .ls-collapse {
         padding: 10px;
         padding-bottom: 25px;
