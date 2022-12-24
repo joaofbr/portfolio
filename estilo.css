@@ -112,7 +112,7 @@
         position: absolute;
         z-index: -1;
         width: 100%;
-        background-color: #08080842;
+        background-color: #08080841;
         padding: 100px;
         height: 100%;
     }
@@ -539,6 +539,10 @@
         /*banner*/
         body {
             overflow-x: hidden;
+        }
+
+        .opacity {
+            height: 1000px;
         }
 
         #foto {
