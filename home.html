@@ -13,8 +13,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="//assets.locaweb.com.br/locastyle/3.10.1/javascripts/locastyle.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
     <title>João Pedro</title>
 </head>
@@ -159,7 +161,6 @@
                         <h3 id="textSkill">python</h3>
                         <div aria-label="50%" data-ls-module="progressBar" role="progressbar" aria-valuenow="50"
                             class="barraP ls-animated ls-tooltip-right"></div>
-
                     </div>
                 </div>
             </div>
@@ -389,13 +390,17 @@
             </div>
         </div>
     </div>
-    <!--animação aos link-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!--animação aos script-->
-    <script>
-        AOS.init();
-    </script>
+    <script src="app.js"></script>
+    <style>
+        .navbar-top {
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+        }
+
+        .navbar-top1 {
+            transition: 0.5s;
+        }
+    </style>
 </body>
 <!--footer-->
 <footer id="rodape">
@@ -419,63 +424,5 @@
             download="curriculoJoao.pdf" target="_blank"><i class="fa fa-file-pdf-o" id="footer"></i></a>
     </section>
 </footer>
-<!--animação do texto no banner-->
-<script>
-    var i = 0;
-    var A = 0;
-    var tag = document.getElementById("text");
-    var html = document.getElementById("text").innerHTML;
-    var attr = tag.setAttribute("data", html);
-    var txt = tag.getAttribute("data");
-    var speed = 90;
-
-    function typeWriter() {
-        if (i <= txt.length) {
-            document.getElementById("text").innerHTML = txt.slice(0, i + 1);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
-    }
-    typeWriter();
-</script>
-<!--navbar transition script-->
-<script>
-    (function () {
-        var menu = document.getElementById('menu');
-        window.addEventListener('scroll', function () {
-            if (window.scrollY == 0) menu.classList.add('navbar-top');
-            else menu.classList.remove('navbar-top');
-        });
-    })();
-    (function () {
-        var menu = document.getElementById('menu');
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 0) menu.classList.add('navbar-top1');
-        });
-    })();
-</script>
-<!--animação scroll-->
-<script>
-    $('nav a').click(function (e) {
-        e.preventDefault();
-        var id = $(this).attr('href'),
-            targetOffset = $(id).offset().top,
-            menuHeight = $('nav').innerHeight();
-        $('html, body').animate({
-            scrollTop: targetOffset - menuHeight + 30
-        }, 600);
-    });
-</script>
-<!--navbar transparente estilo-->
-<style type="text/css">
-    .navbar-top {
-        background-color: rgba(0, 0, 0, 0);
-        box-shadow: none;
-    }
-
-    .navbar-top1 {
-        transition: 0.5s;
-    }
-</style>
 
 </html>
