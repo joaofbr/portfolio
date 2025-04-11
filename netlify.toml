@@ -1,12 +1,9 @@
 [build]
   publish = "/"
 
-# Configurações do formulário
-[forms]
-  # Nome do formulário que corresponde ao atributo name="contact"
-  [forms.contact]
-    # Define redirecionamento após envio do formulário
-    success_url = "/thanks.html"
+# Configuração específica para o formulário
+[forms.contact]
+  success_url = "/thanks.html"
 
 # Redirecionamentos
 [[redirects]]

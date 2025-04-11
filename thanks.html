@@ -21,6 +21,7 @@
             align-items: center;
             justify-content: center;
             padding: 2rem;
+            font-family: 'Poppins', sans-serif;
         }
         
         @keyframes gradient {
@@ -30,7 +31,7 @@
         }
         
         .thanks-container {
-            background-color: var(--white);
+            background-color: #ffffff;
             border-radius: 15px;
             padding: 3rem;
             text-align: center;
@@ -46,20 +47,21 @@
         }
         
         h1 {
-            color: var(--primary-color);
+            color: #2c3e50;
             margin-bottom: 1rem;
+            font-weight: 600;
         }
         
         p {
             font-size: 1.1rem;
-            color: var(--text-color);
+            color: #333333;
             margin-bottom: 2rem;
         }
         
         .btn-back {
             display: inline-block;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: var(--white);
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #ffffff;
             font-weight: 500;
             padding: 0.75rem 2rem;
             border: none;
@@ -71,7 +73,7 @@
         .btn-back:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            color: var(--white);
+            color: #ffffff;
         }
         
         @media (max-width: 576px) {
@@ -86,7 +88,7 @@
         <i class="fas fa-check-circle icon-success"></i>
         <h1>Mensagem Enviada!</h1>
         <p>Obrigado por entrar em contato. Responderei sua mensagem o mais breve possível.</p>
-        <a href="index.html" class="btn-back">Voltar ao Portfólio</a>
+        <a href="/" class="btn-back">Voltar ao Portfólio</a>
     </div>
 </body>
 </html> 
