@@ -239,10 +239,38 @@
     <section id="contact" class="section">
         <div class="section-content text-center">
             <h2 class="mb-4">Contato</h2>
-            <p class="lead mb-4">Entre em contato comigo através do WhatsApp</p>
-            <a href="https://wa.me/24999203432" target="_blank" class="social-btn whatsapp-btn">
-                <i class="fab fa-whatsapp"></i><span>Enviar Mensagem</span>
-            </a>
+            <p class="lead mb-4">Entre em contato comigo!</p>
+            
+            <div class="contact-form-container">
+                <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                    <input type="hidden" name="form-name" value="contact">
+                    
+                    <div class="form-group mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Seu nome" required>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <input type="text" name="subject" class="form-control" placeholder="Assunto">
+                    </div>
+                    
+                    <div class="form-group mb-4">
+                        <textarea name="message" class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+            
+            <div class="mt-4">
+                <p>Ou, se preferir, entre em contato diretamente pelo WhatsApp</p>
+                <a href="https://wa.me/24999203432" target="_blank" class="social-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i><span>Enviar Mensagem</span>
+                </a>
+            </div>
         </div>
     </section>
 
