@@ -1,0 +1,5 @@
+# Redirecionar para a página de agradecimento após o envio do formulário
+/success /thanks.html 302
+
+# Redirecionar todas as outras rotas para o index.html (para SPA)
+/* /index.html 200 

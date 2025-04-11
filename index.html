@@ -242,6 +242,15 @@
             <p class="lead mb-4">Entre em contato comigo!</p>
             
             <div class="contact-form-container">
+                <!-- Formulário oculto para o Netlify -->
+                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                    <input type="text" name="name" />
+                    <input type="email" name="email" />
+                    <input type="text" name="subject" />
+                    <textarea name="message"></textarea>
+                </form>
+                
+                <!-- Formulário visível -->
                 <form name="contact" method="POST" data-netlify="true" class="contact-form">
                     <input type="hidden" name="form-name" value="contact">
                     

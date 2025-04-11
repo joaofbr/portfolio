@@ -1,0 +1,15 @@
+[build]
+  publish = "/"
+
+# Define configurações específicas do formulário
+[forms]
+  # Nome do formulário que corresponde ao atributo name="contact"
+  [forms.contact]
+    # Define redirecionamento após envio do formulário
+    success_url = "/thanks.html"
+    
+# Configuração de redirecionamento para permitir single page app
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
