@@ -248,11 +248,13 @@
                     <input type="email" name="email" />
                     <input type="text" name="subject" />
                     <textarea name="message"></textarea>
+                    <input type="hidden" name="netlify-success-url" value="/thanks.html" />
                 </form>
                 
                 <!-- Formulário visível -->
                 <form name="contact" method="POST" data-netlify="true" class="contact-form">
                     <input type="hidden" name="form-name" value="contact">
+                    <input type="hidden" name="netlify-success-url" value="/thanks.html">
                     
                     <div class="form-group mb-3">
                         <input type="text" name="name" class="form-control" placeholder="Seu nome" required>
